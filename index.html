@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="stylesheet" href="./style.css">
+
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        screens: {
+      'sm': '450px',
+      // => @media (min-width: 640px) { ... }
+
+      
+    },
+        colors: {
+          'heading-color': '#212121',
+          'subHeading-color': '#494949',
+          'para-color': '#737373',
+          'liight-green': '#ABEF5F',
+          'green-light': 'rgba(171, 239, 95, 0.5)',
+          'section-bg':''
+         
+        },
+        backgroundImage: {
+        'custom-gradient': 'linear-gradient(0.00deg, rgb(255, 25, 255), bg-base-200 100%)',
+      },
+        fontFamily: {
+          'global-font': ['Manrope', 'system-ui'],
+        },
+      }
+    }
+  }
+</script>
+
+
+</head>
+<body class="font-global-font">
+    <header class="bg-gradient-to-t from-slate-50 to-slate-100">
+
+        <div class="container mx-auto">
+             <!-- navigation bar -->
+             <div class="navbar">
+              <div class="navbar-start">
+                <!-- logo -->
+                <div class="logo flex justify-center items-center gap-x-2.5">
+                  <span class="h-7 w-7 bg-liight-green rounded-full flex justify-center items-center rotate-45 group-hover:bg-heading-color">
+                    <i class="fa-solid fa-arrow-up-long group-hover:text-liight-green"></i>
+                  </span>
+                  <a class="text-3xl font-extrabold" href="#">Rinterio</a>
+                </div>
+              </div>
+            
+              <!-- nav end for small screens -->
+              <div class="navbar-end lg:hidden">
+                <div class="dropdown dropdown-end bg-white rounded-full hover:rounded-full">
+                  <div tabindex="0" role="button" class="btn bg-white rounded-full">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="h-5 w-5"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor">
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M4 6h16M4 12h8m-8 6h16" />
+                    </svg>
+                  </div>
+                  <ul
+                    tabindex="0"
+                    class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                    <li class="hover:bg-none "><a class="text-base text-para-color hover:font-extrabold hover:text-heading-color font-medium">Home</a></li>
+                    <li class="hover:bg-none "><a class="text-base text-para-color hover:font-extrabold font-semibold hover:text-heading-color">Services</a></li>
+                    <li class="hover:bg-none "><a class="text-base text-para-color hover:font-extrabold font-semibold hover:text-heading-color">Portfolio</a></li>
+                    <li class="hover:bg-none "><a class="text-base text-para-color hover:font-extrabold font-semibold hover:text-heading-color">Blog</a></li>
+                    <li class="hover:bg-none "><a class="text-base text-para-color hover:font-extrabold font-semibold hover:text-heading-color">Contact us</a></li>
+                   
+                  </ul>
+                </div>
+              </div>
+            
+              <!-- nav center for large screens -->
+              <div class="navbar-center hidden lg:flex">
+                <ul class="gap-3 menu-horizontal px-1">
+                  <li class="hover:bg-none "><a class="text-base text-para-color hover:font-extrabold hover:text-heading-color font-medium">Home</a></li>
+                  <li class="hover:bg-none "><a class="text-base text-para-color hover:font-extrabold font-semibold hover:text-heading-color">Services</a></li>
+                  <li class="hover:bg-none "><a class="text-base text-para-color hover:font-extrabold font-semibold hover:text-heading-color">Portfolio</a></li>
+                  <li class="hover:bg-none "><a class="text-base text-para-color hover:font-extrabold font-semibold hover:text-heading-color">Blog</a></li>
+                  <li class="hover:bg-none "><a class="text-base text-para-color hover:font-extrabold font-semibold hover:text-heading-color">Contact us</a></li>
+                  
+                 
+                </ul>
+              </div>
+            
+              <!-- nav end for large screens -->
+              <div class="navbar-end hidden md:flex">
+                <div class="flex gap-4 mx-3">
+                  <img class="" src="./assets/search.png" alt="search">
+                  <img src="./assets/cart (1).png" alt="cart">
+                </div>
+                <!-- nav button -->
+                <button class="btn w-full md:w-auto rounded-full bg-liight-green hover:bg-liight-green py-1 px-6 font-bold lg:text-base hover:bg-liight-green/50 group border-0">
+                  View Details
+                  <span class="h-7 w-7 bg-heading-color rounded-full flex justify-center items-center rotate-45 group-hover:bg-heading-color group-hover:bg-liight-green">
+                    <i class="fa-solid fa-arrow-up-long text-liight-green group-hover:text-heading-color"></i>
+                  </span>
+                </button>
+              </div>
+            </div>
+            
+         <!-- hero section -->
+         <div class="hero-section py-10">
+          <div class="hero-contents flex flex-col justify-center items-center text-center">
+            <img class="sm:px-10" src="./assets/banner.png" alt="banner-img">
+            <h1 class="sm:text-[33px] sm:leading-8 lg:text-[64px] lg:leading-[80px]  font-extrabold">A barn house of this design has a striking appearance</h1>
+            <p class="text-subHeading-color lg:text-base sm:text-sm py-4 px lg:px-28">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents, and large windows that flood the space with natural light.</p>
+            
+            <!-- button -->
+            <button class="btn w-full md:w-auto rounded-full bg-liight-green/50 hover:bg-liight-green py-2 px-8 font-bold lg:text-base group">
+              View Details
+              <span class="h-7 w-7 bg-liight-green rounded-full flex justify-center items-center rotate-45 group-hover:bg-heading-color">
+                <i class="fa-solid fa-arrow-up-long group-hover:text-liight-green"></i>
+              </span>
+            </button>
+            
+            
+           <!-- btn -->
+          </div>
+         </div>
+        </div>
+       
+
+    </header>
+    
+    
+</body>
+</html>
