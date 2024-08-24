@@ -20,3 +20,4 @@
     </p>
   </div>
   <!-- section heading -->
+  flex sm:flex-col lg:flex-row
